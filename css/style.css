@@ -144,7 +144,7 @@ button:hover {
 }   
 
 
- body::-webkit-scrollbar {
+ /* body::-webkit-scrollbar {
   width: 15px;  
 }
 
@@ -156,7 +156,7 @@ body::-webkit-scrollbar-thumb {
   background-color: rgb(168, 168, 168);
   border-radius: 20px;  
   border: 3px solid whitesmoke; 
-} 
+}  */
 
 
 /*  Navbar */
@@ -1908,7 +1908,8 @@ font-style: normal;
   .work-container {
     display: flex;
     flex-direction: column;
-    height: 58vh; 
+    height: 58vh;  
+    margin-left: 2rem;
 
   }
 
@@ -2447,7 +2448,13 @@ background-color:whitesmoke;
 .EventWork {
   height: 48vh; 
 } 
-}
+} 
+
+@media only screen and (max-width: 768px) {
+  .EventWork {
+    height: 100vh; 
+  } 
+  }
 /* Event and Workshop */
 
 
