@@ -144,7 +144,7 @@ button:hover {
 }   
 
 
-/* body::-webkit-scrollbar {
+ body::-webkit-scrollbar {
   width: 15px;  
 }
 
@@ -156,7 +156,7 @@ body::-webkit-scrollbar-thumb {
   background-color: rgb(168, 168, 168);
   border-radius: 20px;  
   border: 3px solid whitesmoke; 
-} */
+} 
 
 
 /*  Navbar */
@@ -814,7 +814,16 @@ font-style: normal;
   font-family: 'Nephilm';
   font-weight: 400;
   font-style: normal;
-  }
+  } 
+
+  
+@media (max-width: 991px) {
+  
+  .whycu .row {
+    flex-direction: row !important;
+  } 
+}
+  
 
 
 
@@ -1076,7 +1085,10 @@ font-style: normal;
     text-align: left;
   }
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 576px) { 
+  .whatWeOffer{ 
+    margin-left: 3.5rem;
+  }
   .blog-slider__content {
     padding: 0;
   }
@@ -1120,7 +1132,13 @@ font-style: normal;
   .blog-slider__button {
     width: 100%;
   }
-}
+} 
+
+@media screen and (max-width: 991px) {
+ .whatWeOffer{ 
+  min-height: 50vh;
+ }
+} 
 
 .blog-slider .swiper-container-horizontal > .swiper-pagination-bullets, .blog-slider .swiper-pagination-custom, .blog-slider .swiper-pagination-fraction {
   bottom: 10px;
@@ -1312,7 +1330,7 @@ font-style: normal;
     width: 59vw;
     min-height: 62vw;
     padding: 7vw;
-    font-size: 4vw;
+    font-size: 4vw; 
   } 
 
   .es-title-container p{ 
@@ -1358,10 +1376,10 @@ font-style: normal;
 
 /* Book Consult*/
 
-.section {
+/* .section {
     padding: 100px 0;
     position: relative;
-}
+} */
 .gray-bg {
     background-color: white;
 }
@@ -1879,13 +1897,30 @@ font-style: normal;
 
 .panel.active .details {
   visibility: visible;
-}  
+}   
+
+@media (max-width: 991px) {
+  .work-container {
+    display: flex;
+    flex-direction: column;
+    height: 58vh; 
+
+  }
+
+  .panel h3 {
+    font-size: 31px;
+  }
+
+  .panel p {
+    font-size: 12px;
+  }
+}
 
 @media (max-width: 768px) {
   .work-container {
     display: flex;
     flex-direction: column;
-    height: 100vh; 
+    height: 68vh; 
   }
 
   .panel h3 {
@@ -1895,7 +1930,7 @@ font-style: normal;
   .panel p {
     font-size: 12px;
   }
-}  
+}
 
 /* Work-Out Program End */
 
