@@ -798,6 +798,14 @@ font-style: normal;
       font-size: 30px;
       text-align: center;
   }
+} 
+
+
+@media only screen and (max-width: 768px) { 
+  .dpdt-div .dpdt-para {
+    font-size: 20px;
+    text-align: center;
+}
 }
 /* Diet Perspective End */
 
@@ -956,8 +964,9 @@ font-style: normal;
     min-height: 500px;
     height: auto;
     margin: 180px auto;
-  }
-}
+  } 
+}  
+
 @media screen and (max-height: 500px) and (min-width: 992px) {
   .blog-slider {
     height: 350px;
@@ -1086,9 +1095,6 @@ font-style: normal;
   }
 }
 @media screen and (max-width: 576px) { 
-  .whatWeOffer{ 
-    margin-left: 3.5rem;
-  }
   .blog-slider__content {
     padding: 0;
   }
@@ -1283,7 +1289,37 @@ font-style: normal;
   .es-body {
     margin-top: -23rem; 
   } 
+  .es-body {
+    grid-template-columns: 1fr;
+    margin-right: 5vw; 
+    gap: 150px;
   }
+
+  .es-title-container {
+    margin-left: 5vw;
+  }
+
+  .es-stack {
+    width: 80vw;
+    margin-right: 5vw; 
+    margin-top: 6rem;
+  }
+
+  .es-card {
+    width: 47vw;
+    min-height: 38vw;
+    padding: 7vw;
+    font-size: 4vw; 
+  } 
+
+  .es-title-container p{ 
+    font-size: 2.7vw;
+  } 
+
+  .es-title-container h1 {
+    font-size: 7vw;
+  }
+} 
 
 .es-card:nth-last-child(n + 4) {
   --y: calc(-50% + -30px);
@@ -1312,13 +1348,14 @@ font-style: normal;
     transform: translate(-50%, calc(var(--y) - 15px)) scale(0.85);
     z-index: -1;
   }
-}   
+}    
 
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 500px) {
   .es-body {
     grid-template-columns: 1fr;
     margin-right: 5vw; 
-    gap: 20px;
+    gap: 2px;
   }
 
   .es-title-container {
@@ -1332,8 +1369,41 @@ font-style: normal;
   }
 
   .es-card {
-    width: 59vw;
-    min-height: 62vw;
+    width: 53vw;
+    min-height: 55vw;
+    padding: 7vw;
+    font-size: 4vw; 
+  } 
+
+  .es-title-container p{ 
+    font-size: 2.7vw;
+  } 
+
+  .es-title-container h1 {
+    font-size: 7vw;
+  }
+} 
+
+@media screen and (max-width: 425px) {
+  .es-body {
+    grid-template-columns: 1fr;
+    margin-right: 5vw; 
+    gap: 2px;
+  }
+
+  .es-title-container {
+    margin-left: 5vw;
+  }
+
+  .es-stack {
+    width: 80vw;
+    margin-right: 5vw; 
+    margin-top: 6rem;
+  }
+
+  .es-card {
+    width: 53vw;
+    min-height: 55vw;
     padding: 7vw;
     font-size: 4vw; 
   } 
@@ -1343,7 +1413,7 @@ font-style: normal;
   } 
 
   .es-title-container h1 {
-    font-size: 7vw;
+    font-size: 6vw;
   }
 }
 
