@@ -1279,6 +1279,11 @@ font-style: normal;
 }
 
 
+@media only screen and (max-width: 991px) {
+  .es-body {
+    margin-top: -23rem; 
+  } 
+  }
 
 .es-card:nth-last-child(n + 4) {
   --y: calc(-50% + -30px);
@@ -2436,7 +2441,13 @@ background-color:whitesmoke;
   height: 100%;
   width: 100%;
   object-fit: cover;
+}  
+
+@media only screen and (max-width: 991px) {
+.EventWork {
+  height: 48vh; 
 } 
+}
 /* Event and Workshop */
 
 
