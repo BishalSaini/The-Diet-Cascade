@@ -1401,7 +1401,8 @@ font-style: normal;
   }
 
   .es-title-container {
-    margin-left: 5vw;
+    margin-left: 5vw; 
+    margin-top: -16rem;
   }
 
   .es-stack {
