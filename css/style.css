@@ -654,7 +654,7 @@ header{
   .tag-counter p {
     font-size: 18px;
     margin-bottom: 20px; 
-    margin-top: -2rem;
+    margin-top: -6rem;
   }
 }  
 
@@ -670,7 +670,7 @@ header{
 @media (max-width: 400px) {
 
   .tag-counter p {
-    font-size: 12px;
+    font-size: 14px;
     margin-bottom: 20px; 
     margin-top: -7rem;
   }
@@ -859,7 +859,8 @@ font-style: normal;
   align-items: center;
   text-align: center;
   height: 45px;
-  margin: 20px; 
+  margin: 20px;   
+  
 }
 
 .book-form {
@@ -878,8 +879,8 @@ font-style: normal;
 
 .book {
   position: relative;
-  margin-top: 43px;
-  overflow: hidden;
+  margin-top: 43px; 
+  overflow: hidden; 
 }
 
 #background-video {
@@ -899,8 +900,6 @@ font-style: normal;
   z-index: 1; /* Ensure the content is above the video */
 }
 
-/* ... (Rest of your CSS remains unchanged) */
-
 
 /* Media query for smaller screens */
 @media (max-width: 768px) {
@@ -913,7 +912,17 @@ font-style: normal;
 .book-content-par{
     flex-direction: column; 
     font-size: 10px;
-}
+} 
+
+.book-counter p {
+  font-size: 26px;
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+  text-align: center;
+  color: white;
+  font-weight: 800; 
+  margin-top: -2rem;
+} 
 } 
 /* TagLine */
 
