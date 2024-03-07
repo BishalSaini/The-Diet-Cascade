@@ -406,7 +406,17 @@ function openWP() {
 } 
 
 
+/* Image change after certain time */ 
+function changeImage() {
+  document.getElementById('aboutImage').src = 'images/logo.png'; 
+}
+setTimeout(changeImage, 5000); 
 
+AOS.init( {
+  offset: 350, 
+  duration: 300, 
+}
+); 
 
 
 
