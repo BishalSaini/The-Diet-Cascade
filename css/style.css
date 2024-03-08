@@ -1323,11 +1323,11 @@ font-style: normal;
   } 
 
   .es-title-container p{ 
-    font-size: 2.7vw;
+    font-size: 3.7vw;
   } 
 
   .es-title-container h1 {
-    font-size: 7vw;
+    font-size: 8vw;
   }
 } 
 
@@ -1386,11 +1386,11 @@ font-style: normal;
   } 
 
   .es-title-container p{ 
-    font-size: 2.7vw;
+    font-size: 4.7vw;
   } 
 
   .es-title-container h1 {
-    font-size: 7vw;
+    font-size: 10vw;
   }
 } 
 
@@ -1415,15 +1415,15 @@ font-style: normal;
     width: 53vw;
     min-height: 55vw;
     padding: 7vw;
-    font-size: 4vw; 
+    font-size: 5vw; 
   } 
 
   .es-title-container p{ 
-    font-size: 3.7vw;
+    font-size: 4.7vw;
   } 
 
   .es-title-container h1 {
-    font-size: 6vw;
+    font-size: 10vw;
   }
 }
 
@@ -3028,10 +3028,10 @@ section {
     overflow: hidden;
     }
     .WA_Chat_Widget .WA_ChatBox .WA_ChatBox_Header .avatarBox img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    }
+      width: -webkit-fill-available;
+      height: 97%;
+      object-fit: unset;
+  }
     .WA_Chat_Widget .WA_ChatBox .WA_ChatBox_Header .infoBox .name{
     color: #fff;
     font-weight: 600; 

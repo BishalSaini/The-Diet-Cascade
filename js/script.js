@@ -60,6 +60,19 @@ window.onload = function () {
 }; 
 
 
+  document.addEventListener('DOMContentLoaded', function () {
+    var navCheckbox = document.getElementById('nv_active');
+    var navLinks = document.querySelectorAll('.nv_wrapper ul li a');
+
+    function closeNavbar() {
+      navCheckbox.checked = false;
+    }
+
+    navLinks.forEach(function (link) {
+      link.addEventListener('click', closeNavbar);
+    });
+  });
+
 
 
 const counterNum = document.querySelectorAll(".count");
