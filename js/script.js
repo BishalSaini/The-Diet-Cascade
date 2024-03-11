@@ -333,7 +333,7 @@ function toggleChatbox() {
 
 function openWhatsApp(message) {
   var phoneNumber = '+91 9004491160';
-  var encodedMessage = encodeURIComponent(message);
+  var encodedMessage = encodeURIComponent("Heyy!! I'm interested in diet counseling and seeking information on available services");
 
   var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
