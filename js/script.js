@@ -333,7 +333,7 @@ function toggleChatbox() {
 
 
 function openWhatsApp(phoneNumber, message) {
-  var isMobile = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+  var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
   var whatsappLink = isMobile ?
       'https://wa.me/' + phoneNumber + '?text=' + message :
