@@ -338,8 +338,13 @@ function openWhatsApp() {
   var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
   var whatsappLink = isMobile ?
-      'https://api.whatsapp.com/send?phone=' + phoneNumber + '&text=' + message :
+      'https://wa.me/' + phoneNumber + '?text=' + message :
       'https://web.whatsapp.com/send?phone=' + phoneNumber + '&text=' + message;
+
+  // For iOS, try opening with universal link
+  if (isMobile && /iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+      whatsappLink = 'https://api.whatsapp.com/send?phone=' + phoneNumber + '&text=' + message;
+  }
 
   window.open(whatsappLink, '_blank');
 
@@ -347,8 +352,6 @@ function openWhatsApp() {
       window.location.href = '';
   }, 2000);
 }
-
-// Update the other functions accordingly if needed.
 
 
 function openWpToBookAppo() {
