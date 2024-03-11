@@ -331,27 +331,22 @@ function toggleChatbox() {
     chatbox.style.display = isChatboxVisible ? "block" : "none";
 }
 
-function openWhatsApp(message) {
-  var phoneNumber = '+91 9004491160';
-  var encodedMessage = encodeURIComponent("Heyy!! I'm interested in diet counseling and seeking information on available services");
+function openWhatsApp() {
+    var phoneNumber = '+91 9004491160';
+    var message = encodeURIComponent("Heyy!! I'm interested in diet counseling and seeking information on available services");
 
-  var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
-  var whatsappLink = 'https://wa.me/' + phoneNumber + '?text=' + encodedMessage;
+    var whatsappLink = isMobile ?
+        'https://wa.me/' + phoneNumber + '?text=' + message :
+        'https://web.whatsapp.com/send?phone=' + phoneNumber + '&text=' + message;
 
-  // Check for WhatsApp app on iPhone
-  if (isMobile && /iPhone|iPad|iPod/i.test(navigator.userAgent) && !/WhatsApp/.test(navigator.userAgent)) {
-      // Redirect to WhatsApp website or App Store
-      whatsappLink = 'https://api.whatsapp.com/send?phone=' + phoneNumber + '&text=' + encodedMessage;
-  } else {
-      window.open(whatsappLink, '_blank');
-  }
+    window.open(whatsappLink, '_blank');
 
-  setTimeout(function() {
-      window.location.href = '';
-  }, 2000);
-}
-
+    setTimeout(function() {
+        window.location.href = '';
+    }, 2000);
+}  
 
 function openWpToBookAppo() {
     var phoneNumber = '+91 9004491160';
