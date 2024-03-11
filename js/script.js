@@ -331,22 +331,21 @@ function toggleChatbox() {
     chatbox.style.display = isChatboxVisible ? "block" : "none";
 }
 
-function openWhatsApp() {
+function openWhatsApp(message) {
   var phoneNumber = '+91 9004491160';
-  var message = encodeURIComponent("Heyy!! I'm interested in diet counseling and seeking information on available services");
+  var encodedMessage = encodeURIComponent(message);
 
   var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
-  var whatsappLink = isMobile ?
-      'https://wa.me/' + phoneNumber + '?text=' + message :
-      'https://web.whatsapp.com/send?phone=' + phoneNumber + '&text=' + message;
+  var whatsappLink = 'https://wa.me/' + phoneNumber + '?text=' + encodedMessage;
 
-  // For iOS, try opening with universal link
-  if (isMobile && /iPhone|iPad|iPod/i.test(navigator.userAgent)) {
-      whatsappLink = 'https://api.whatsapp.com/send?phone=' + phoneNumber + '&text=' + message;
+  // Check for WhatsApp app on iPhone
+  if (isMobile && /iPhone|iPad|iPod/i.test(navigator.userAgent) && !/WhatsApp/.test(navigator.userAgent)) {
+      // Redirect to WhatsApp website or App Store
+      window.location.href = 'https://apps.apple.com/app/whatsapp/id310633997';
+  } else {
+      window.open(whatsappLink, '_blank');
   }
-
-  window.open(whatsappLink, '_blank');
 
   setTimeout(function() {
       window.location.href = '';
