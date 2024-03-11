@@ -342,7 +342,7 @@ function openWhatsApp(message) {
   // Check for WhatsApp app on iPhone
   if (isMobile && /iPhone|iPad|iPod/i.test(navigator.userAgent) && !/WhatsApp/.test(navigator.userAgent)) {
       // Redirect to WhatsApp website or App Store
-      window.location.href = 'https://apps.apple.com/app/whatsapp/id310633997';
+      whatsappLink = 'https://api.whatsapp.com/send?phone=' + phoneNumber + '&text=' + encodedMessage;
   } else {
       window.open(whatsappLink, '_blank');
   }
