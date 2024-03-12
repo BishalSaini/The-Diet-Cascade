@@ -586,22 +586,22 @@ header{
 /* About Dt.Sabah End */ 
 
  
-.tag {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/diet25.mp4);
+/* .tag {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/running.jpg);
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
   margin-top: 0px;
-}
+} */
 
-.tag-content-par {
+/* .tag-content-par {
   display: flex;
   flex-wrap: wrap; 
 } 
-
-/* .tag {
+ */
+ .tag {
   position: relative;
   margin-top: 43px;
   overflow: hidden;
@@ -622,7 +622,7 @@ header{
   flex-wrap: wrap;
   position: relative; 
   z-index: 1;
-} */
+} 
 
 
 .tag-counter {
