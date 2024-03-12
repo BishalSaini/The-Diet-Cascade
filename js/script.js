@@ -163,6 +163,13 @@ var swiper = new Swiper('.blog-slider', {
 }); 
 
 
+  document.addEventListener('DOMContentLoaded', function () {
+    var video = document.getElementById('background-video');
+    
+    video.removeAttribute('controls');
+    video.play();
+  });
+
 
 
 

@@ -587,7 +587,7 @@ header{
 
  
 .tag {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/wcu.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.pexels.com/photos/15319019/pexels-photo-15319019/free-photo-of-dietitian-preparing-weekly-meals-plan.jpeg);
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
@@ -890,7 +890,7 @@ font-style: normal;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: -1; /* Set a negative z-index to position the video behind the content */
+  z-index: -1; /* Set a negative z-index to position the video behind the content */ 
 }
 
 .book-content-par {
