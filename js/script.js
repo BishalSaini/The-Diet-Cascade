@@ -344,27 +344,23 @@ function toggleChatbox() {
 }
 
 function openWhatsApp() {
-    var phoneNumber = '+91 9004491160';
-    var message = encodeURIComponent("Heyy!! I'm interested in diet counseling and seeking information on available services");
+  var phoneNumber = '+91 9004491160';
+  var message = encodeURIComponent("Heyy!! I'm interested in diet counseling and seeking information on available services");
 
-    var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+  var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
-    var whatsappLink = isMobile ?
-        'https://wa.me/' + phoneNumber + '?text=' + message :
-        'https://web.whatsapp.com/send?phone=' + phoneNumber + '&text=' + message; 
+  var whatsappLink = isMobile ?
+      'https://wa.me/' + phoneNumber + '?text=' + message :
+      'https://web.whatsapp.com/send?phone=' + phoneNumber + '&text=' + message;
 
-        if (isMobile && /(iPad|iPhone|iPod)/g.test(navigator.userAgent)) {
-          // Use Universal Links for iOS
-          window.location.href = 'https://api.whatsapp.com/send?phone=' + phoneNumber + '&text=' + message;
-      } else {
-          // Open in a new window for other devices
-          window.open(whatsappLink, '_blank');
-      }
+  // Open WhatsApp with the pre-filled message
+  window.open(whatsappLink, '_blank');
 
-    setTimeout(function() {
-        window.location.href = '';
-    }, 2000);
-}  
+  setTimeout(function() {
+      window.location.href = '';
+  }, 2000);
+}
+
 
 function openWpToBookAppo() {
     var phoneNumber = '+91 9004491160';
