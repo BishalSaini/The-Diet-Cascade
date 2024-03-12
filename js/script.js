@@ -170,7 +170,12 @@ var swiper = new Swiper('.blog-slider', {
     video.play();
   });
 
-
+  document.addEventListener('DOMContentLoaded', function () {
+    var video2 = document.getElementById('background-video2');
+    
+    video2.removeAttribute('controls');
+    video2.play();
+  });
 
 
 /*   What we Offer 
