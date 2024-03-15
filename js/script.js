@@ -371,74 +371,110 @@ function openWhatsApp() {
 
 
 function openWpToBookAppo() {
-  var phoneNumber = '9004491160';
+  var phoneNumber = '+91 9004491160'; 
+  var phoneNumbers = '9004491160';
   var message = encodeURIComponent("Heyy!! I'm interested in diet counseling and seeking information on available services");
 
-  var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+  var isMobile = /Android/i.test(navigator.userAgent); 
+
+  var isMobiles = /iPhone|iPad|iPod/i.test(navigator.userAgent);
 
   var whatsappLink = isMobile ?
       'https://wa.me/' + phoneNumber + '?text=' + message :
+      'https://web.whatsapp.com/send?phone=' + phoneNumber + '&text=' + message; 
+
+      var whatsappLinks = isMobiles ?
+      'https://wa.me/' + phoneNumbers + '?text=' + message :
       'https://web.whatsapp.com/send?phone=' + phoneNumber + '&text=' + message;
 
-  window.open(whatsappLink, '_blank');
+  window.open(whatsappLink, '_blank'); 
+
+  window.open(whatsappLinks, '_blank');
 
   setTimeout(function() {
       window.location.href = '';
   }, 2000);
-} 
+}
 
 
 function openWpToEnroll() {
-  var phoneNumber = '9004491160';
+  var phoneNumber = '+91 9004491160'; 
+  var phoneNumbers = '9004491160';
   var message = encodeURIComponent("Heyy!! I'm interested in diet counseling and seeking information on available services");
 
-  var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+  var isMobile = /Android/i.test(navigator.userAgent); 
+
+  var isMobiles = /iPhone|iPad|iPod/i.test(navigator.userAgent);
 
   var whatsappLink = isMobile ?
       'https://wa.me/' + phoneNumber + '?text=' + message :
+      'https://web.whatsapp.com/send?phone=' + phoneNumber + '&text=' + message; 
+
+      var whatsappLinks = isMobiles ?
+      'https://wa.me/' + phoneNumbers + '?text=' + message :
       'https://web.whatsapp.com/send?phone=' + phoneNumber + '&text=' + message;
 
-  window.open(whatsappLink, '_blank');
+  window.open(whatsappLink, '_blank'); 
+
+  window.open(whatsappLinks, '_blank');
 
   setTimeout(function() {
       window.location.href = '';
   }, 2000);
-}  
+}
 
 function openWpToOther() {
-  var phoneNumber = '9004491160';
+  var phoneNumber = '+91 9004491160'; 
+  var phoneNumbers = '9004491160';
   var message = encodeURIComponent(" ");
 
-  var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+  var isMobile = /Android/i.test(navigator.userAgent); 
+
+  var isMobiles = /iPhone|iPad|iPod/i.test(navigator.userAgent);
 
   var whatsappLink = isMobile ?
       'https://wa.me/' + phoneNumber + '?text=' + message :
+      'https://web.whatsapp.com/send?phone=' + phoneNumber + '&text=' + message; 
+
+      var whatsappLinks = isMobiles ?
+      'https://wa.me/' + phoneNumbers + '?text=' + message :
       'https://web.whatsapp.com/send?phone=' + phoneNumber + '&text=' + message;
 
-  window.open(whatsappLink, '_blank');
+  window.open(whatsappLink, '_blank'); 
+
+  window.open(whatsappLinks, '_blank');
 
   setTimeout(function() {
       window.location.href = '';
   }, 2000);
-} 
+}
 
 /* Book Appoi */
 function openWP() {
-  var phoneNumber = '9004491160';
+  var phoneNumber = '+91 9004491160'; 
+  var phoneNumbers = '9004491160';
   var message = encodeURIComponent("SLOTS");
 
-  var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+  var isMobile = /Android/i.test(navigator.userAgent); 
+
+  var isMobiles = /iPhone|iPad|iPod/i.test(navigator.userAgent);
 
   var whatsappLink = isMobile ?
       'https://wa.me/' + phoneNumber + '?text=' + message :
+      'https://web.whatsapp.com/send?phone=' + phoneNumber + '&text=' + message; 
+
+      var whatsappLinks = isMobiles ?
+      'https://wa.me/' + phoneNumbers + '?text=' + message :
       'https://web.whatsapp.com/send?phone=' + phoneNumber + '&text=' + message;
 
-  window.open(whatsappLink, '_blank');
+  window.open(whatsappLink, '_blank'); 
+
+  window.open(whatsappLinks, '_blank');
 
   setTimeout(function() {
       window.location.href = '';
   }, 2000);
-} 
+}
 
 
 /* Image change after certain time */ 
