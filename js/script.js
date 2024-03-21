@@ -1,1 +1,495 @@
-var TxtType=function(e,t,n){this.toRotate=t,this.el=e,this.loopNum=0,this.period=parseInt(n,10)||2e3,this.txt="",this.tick(),this.isDeleting=!1};TxtType.prototype.tick=function(){var e=this.loopNum%this.toRotate.length,t=this.toRotate[e];this.isDeleting?this.txt=t.substring(0,this.txt.length-1):this.txt=t.substring(0,this.txt.length+1),this.el.innerHTML='<span class="hero-wrap">'+this.txt+"</span>";var n=this,o=200-100*Math.random();this.isDeleting&&(o/=2),this.isDeleting||this.txt!==t?this.isDeleting&&""===this.txt&&(this.isDeleting=!1,this.loopNum++,o=500):(o=this.period,this.isDeleting=!0),setTimeout(function(){n.tick()},o)},window.onload=function(){for(var e=document.getElementsByClassName("typewrite"),t=0;t<e.length;t++){var n=e[t].getAttribute("data-type"),o=e[t].getAttribute("data-period");n&&new TxtType(e[t],JSON.parse(n),o)}var i=document.createElement("style");i.type="text/css",i.innerHTML=".typewrite > .hero-wrap { border-right: 0.08em solid #fff}",document.body.appendChild(i)},document.addEventListener("DOMContentLoaded",function(){var e=document.getElementById("nv_active"),t=document.querySelectorAll(".nv_wrapper ul li a");function n(){e.checked=!1}t.forEach(function(e){e.addEventListener("click",n)})});const counterNum=document.querySelectorAll(".count"),speed=200,options={root:null,rootMargin:"0px",threshold:.5},handleIntersection=(e,t)=>{e.forEach(e=>{e.isIntersecting&&(counterNum.forEach(e=>{let t=()=>{let n=parseInt(e.dataset.number),o=parseInt(e.innerText),i=Math.max(Math.trunc(n/200),1);o<n&&(e.innerText=`${o+i}+`,setTimeout(t,10))};t()}),t.disconnect())})},observer=new IntersectionObserver(handleIntersection,options),counterSection=document.getElementById("counterSection");counterSection&&observer.observe(counterSection),document.addEventListener("DOMContentLoaded",function(){new Swiper(".re-services",{slidesPerView:2,spaceBetween:30,pagination:{el:".re-pag",clickable:!0},navigation:{nextEl:"#nextSlide",prevEl:"#prevSlide"},breakpoints:{768:{slidesPerView:2,spaceBetween:10}}})});var swiper=new Swiper(".blog-slider",{spaceBetween:30,smartSpeed:450,effect:"fade",loop:!0,mouseWheel:{invert:!1},pagination:{el:".blog-slider__pagination",clickable:!0}});document.addEventListener("DOMContentLoaded",function(){var e=document.getElementById("background-video");e.removeAttribute("controls"),e.play()}),document.addEventListener("DOMContentLoaded",function(){var e=document.getElementById("background-video2");e.removeAttribute("controls"),e.play()});let stack=document.querySelector(".es-stack");function swap(e){let t=document.querySelector(".es-card:last-child");e.target===t&&(t.style.animation="swap 700ms forwards",setTimeout(()=>{t.style.animation="",stack.prepend(t)},700))}[...stack.children].reverse().forEach(e=>stack.append(e)),stack.addEventListener("click",swap);let cards=document.querySelectorAll(".es-card");function rotateCards(){let e=90;cards.forEach(t=>{t.classList.contains("active")?t.style.transform="translate(-50%, -120vh) rotate(-100deg)":(t.style.transform=`translate(-50%, -50%) rotate(${e}deg)`,e-=10)})}rotateCards();const panels=document.querySelectorAll(".panel");function removeActiveClasses(){panels.forEach(e=>{e.classList.remove("active")})}panels.forEach(e=>{e.addEventListener("click",()=>{removeActiveClasses(),e.classList.add("active")})}),$(".clients-carousel").owlCarousel({loop:!0,nav:!1,autoplayTimeout:5e3,animateOut:"fadeOut",animateIn:"fadeIn",smartSpeed:450,margin:30,responsive:{0:{items:1},768:{items:2},991:{items:2},1200:{items:2},1920:{items:2}}}),$(".testimonials-container").owlCarousel({loop:!0,autoplayTimeout:6e3,margin:10,nav:!0,navText:["<i class='fa-solid fa-arrow-left'></i>","<i class='fa-solid fa-arrow-right'></i>"],responsive:{0:{items:1,nav:!0,dots:!1},600:{items:1,nav:!0,dots:!1},768:{items:2}}});const btn=document.querySelector(".read-more-btn"),text=document.querySelector(".card__read-more"),cardHolder=document.querySelector(".testimonials-container");cardHolder.addEventListener("click",e=>{let t=e.target,n=t.className.includes("read-more-btn");if(!n)return;let o=e.target.parentNode.querySelector(".card__read-more");o.classList.toggle("card__read-more--open"),t.textContent=t.textContent.includes("Read More...")?"Read Less...":"Read More..."});let isChatboxVisible=!1;const chatbox=document.querySelector(".WA_Chat_Widget .WA_ChatBox");function hideChatbox(){isChatboxVisible=!1,chatbox.style.display="none"}function toggleChatbox(){isChatboxVisible=!isChatboxVisible,chatbox.style.display=isChatboxVisible?"block":"none"}function openWhatsApp(){var e="+91 9004491160",t=encodeURIComponent("Heyy!! I'm interested in diet counseling and seeking information on available services"),n=/Android/i.test(navigator.userAgent),o=/iPhone|iPad|iPod/i.test(navigator.userAgent);window.open(n?"https://wa.me/"+e+"?text="+t:"https://web.whatsapp.com/send?phone="+e+"&text="+t,"_blank"),window.open(o?"https://wa.me/9004491160?text="+t:"https://web.whatsapp.com/send?phone="+e+"&text="+t,"_blank"),setTimeout(function(){window.location.href=""},2e3)}function openWpToBookAppo(){var e="+91 9004491160",t=encodeURIComponent("Heyy!! I'm interested in diet counseling and seeking information on available services"),n=/Android/i.test(navigator.userAgent),o=/iPhone|iPad|iPod/i.test(navigator.userAgent);window.open(n?"https://wa.me/"+e+"?text="+t:"https://web.whatsapp.com/send?phone="+e+"&text="+t,"_blank"),window.open(o?"https://wa.me/9004491160?text="+t:"https://web.whatsapp.com/send?phone="+e+"&text="+t,"_blank"),setTimeout(function(){window.location.href=""},2e3)}function openWpToEnroll(){var e="+91 9004491160",t=encodeURIComponent("Heyy!! I'm interested in diet counseling and seeking information on available services"),n=/Android/i.test(navigator.userAgent),o=/iPhone|iPad|iPod/i.test(navigator.userAgent);window.open(n?"https://wa.me/"+e+"?text="+t:"https://web.whatsapp.com/send?phone="+e+"&text="+t,"_blank"),window.open(o?"https://wa.me/9004491160?text="+t:"https://web.whatsapp.com/send?phone="+e+"&text="+t,"_blank"),setTimeout(function(){window.location.href=""},2e3)}function openWpToOther(){var e="+91 9004491160",t=encodeURIComponent(" "),n=/Android/i.test(navigator.userAgent),o=/iPhone|iPad|iPod/i.test(navigator.userAgent);window.open(n?"https://wa.me/"+e+"?text="+t:"https://web.whatsapp.com/send?phone="+e+"&text="+t,"_blank"),window.open(o?"https://wa.me/9004491160?text="+t:"https://web.whatsapp.com/send?phone="+e+"&text="+t,"_blank"),setTimeout(function(){window.location.href=""},2e3)}function openWP(){var e="+91 9004491160",t=encodeURIComponent("SLOTS"),n=/Android/i.test(navigator.userAgent),o=/iPhone|iPad|iPod/i.test(navigator.userAgent);window.open(n?"https://wa.me/"+e+"?text="+t:"https://web.whatsapp.com/send?phone="+e+"&text="+t,"_blank"),window.open(o?"https://wa.me/9004491160?text="+t:"https://web.whatsapp.com/send?phone="+e+"&text="+t,"_blank"),setTimeout(function(){window.location.href=""},2e3)}AOS.init({offset:350,duration:300});
+
+// Typing text
+var TxtType = function (el, toRotate, period) {
+  this.toRotate = toRotate;
+  this.el = el;
+  this.loopNum = 0;
+  this.period = parseInt(period, 10) || 2000;
+  this.txt = '';
+  this.tick();
+  this.isDeleting = false;
+};
+
+TxtType.prototype.tick = function () {
+  var i = this.loopNum % this.toRotate.length;
+  var fullTxt = this.toRotate[i];
+
+  if (this.isDeleting) {
+      this.txt = fullTxt.substring(0, this.txt.length - 1);
+  } else {
+      this.txt = fullTxt.substring(0, this.txt.length + 1);
+  }
+
+  this.el.innerHTML = '<span class="hero-wrap">' + this.txt + '</span>';
+
+  var that = this;
+  var delta = 200 - Math.random() * 100;
+
+  if (this.isDeleting) {
+      delta /= 2;
+  }
+
+  if (!this.isDeleting && this.txt === fullTxt) {
+      delta = this.period;
+      this.isDeleting = true;
+  } else if (this.isDeleting && this.txt === '') {
+      this.isDeleting = false;
+      this.loopNum++;
+      delta = 500;
+  }
+
+  setTimeout(function () {
+      that.tick();
+  }, delta);
+};
+
+window.onload = function () {
+  var elements = document.getElementsByClassName('typewrite');
+  for (var i = 0; i < elements.length; i++) {
+      var toRotate = elements[i].getAttribute('data-type');
+      var period = elements[i].getAttribute('data-period');
+      if (toRotate) {
+          new TxtType(elements[i], JSON.parse(toRotate), period);
+      }
+  }
+  // INJECT CSS
+  var css = document.createElement("style");
+  css.type = "text/css";
+  css.innerHTML = ".typewrite > .hero-wrap { border-right: 0.08em solid #fff}";
+  document.body.appendChild(css);
+}; 
+
+
+  document.addEventListener('DOMContentLoaded', function () {
+    var navCheckbox = document.getElementById('nv_active');
+    var navLinks = document.querySelectorAll('.nv_wrapper ul li a');
+
+    function closeNavbar() {
+      navCheckbox.checked = false;
+    }
+
+    navLinks.forEach(function (link) {
+      link.addEventListener('click', closeNavbar);
+    });
+  });
+
+
+
+const counterNum = document.querySelectorAll(".count");
+const speed = 200;
+
+// Observer options
+const options = {
+  root: null,
+  rootMargin: "0px",
+  threshold: 0.5, // You can adjust this threshold based on your needs
+};
+
+// Callback function to be executed when the target element is in view
+const handleIntersection = (entries, observer) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      // Start the counter animation when the section is in view
+      counterNum.forEach((curElem) => {
+        const updateNumber = () => {
+          const targetNumber = parseInt(curElem.dataset.number);
+          const initialNum = parseInt(curElem.innerText);
+
+          const incrementNumber = Math.max(Math.trunc(targetNumber / speed), 1);
+
+          if (initialNum < targetNumber) {
+            curElem.innerText = `${initialNum + incrementNumber}+`;
+            setTimeout(updateNumber, 10);
+          }
+        };
+
+        updateNumber();
+      });
+
+      // Disconnect the observer after the animation is triggered (optional)
+      observer.disconnect();
+    }
+  });
+};
+
+// Create an intersection observer with the callback function and options
+const observer = new IntersectionObserver(handleIntersection, options);
+
+// Target the counter section for observation
+const counterSection = document.getElementById("counterSection");
+if (counterSection) {
+  observer.observe(counterSection);
+}
+
+/* Benifits */
+document.addEventListener("DOMContentLoaded", function () {
+  var swiper = new Swiper(".re-services", {
+     slidesPerView: 2,
+     spaceBetween: 30,
+     pagination: {
+        el: ".re-pag",
+        clickable: true,
+     },
+     navigation: {
+        nextEl: "#nextSlide",
+        prevEl: "#prevSlide",
+     },
+     breakpoints: {
+        // when window width is <= 768px
+        768: {
+           slidesPerView: 2,
+           spaceBetween: 10,
+        },
+     },
+  });  
+
+}); 
+
+var swiper = new Swiper('.blog-slider', {
+  spaceBetween: 30, 
+  /* autoplay: true,
+  autoplayTimeout: 200000,  */
+  smartSpeed: 450,
+  effect: 'fade',
+  loop: true,
+  mouseWheel: {
+      invert: false,
+  },
+  // autoHeight: true
+  pagination: {
+      el: '.blog-slider__pagination',
+      clickable: true,
+  }
+}); 
+
+
+  document.addEventListener('DOMContentLoaded', function () {
+    var video = document.getElementById('background-video');
+    
+    video.removeAttribute('controls');
+    video.play();
+  });
+
+  document.addEventListener('DOMContentLoaded', function () {
+    var video2 = document.getElementById('background-video2');
+    
+    video2.removeAttribute('controls');
+    video2.play();
+  });
+
+
+/*   What we Offer 
+  var swiper = new Swiper(".wwo-swcontainer", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    navigation: {
+      nextEl: "#wwo-nextSlide",
+      prevEl: "#wwo-prevSlide",
+    },
+  });
+
+  swiper.pagination.bullets.forEach(function (bullet, index) {
+     bullet.addEventListener("click", function () {
+        swiper.slideTo(index);
+     });
+  });
+});
+/*   What we Offer */
+
+/* Efficient Service Suite */
+let stack = document.querySelector(".es-stack");
+
+[...stack.children].reverse().forEach(i => stack.append(i));
+
+stack.addEventListener("click", swap);
+
+function swap(e) {
+  let card = document.querySelector(".es-card:last-child");
+  if (e.target !== card) return;
+  card.style.animation = "swap 700ms forwards";
+
+  setTimeout(() => {
+    card.style.animation = "";
+    stack.prepend(card);
+  }, 700);
+}  
+
+
+let cards = document.querySelectorAll(".es-card");
+function rotateCards() {
+  let angle = 90;
+  cards.forEach((card) => {
+    if (card.classList.contains("active")) {
+      card.style.transform = `translate(-50%, -120vh) rotate(-100deg)`;
+    } else {
+      card.style.transform = `translate(-50%, -50%) rotate(${angle}deg)`;
+      angle = angle - 10;
+    }
+  });
+}
+
+rotateCards(); 
+
+/* Workout Program */
+const panels = document.querySelectorAll(".panel");
+
+panels.forEach((panel) => {
+  panel.addEventListener("click", () => {
+    removeActiveClasses(); // Add function to remove active class first
+    panel.classList.add("active");
+  });
+});
+
+function removeActiveClasses() {
+  panels.forEach((panel) => {
+    panel.classList.remove("active");
+  });
+} 
+
+
+$('.clients-carousel').owlCarousel({
+  loop: true,
+  nav: false,
+/*   autoplay: true, */
+  autoplayTimeout: 5000,
+  animateOut: 'fadeOut',
+  animateIn: 'fadeIn',
+  smartSpeed: 450,
+  margin: 30,
+  responsive: {
+      0: {
+          items: 1
+      },
+      768: {
+          items: 2
+      },
+      991: {
+          items: 2
+      },
+      1200: {
+          items: 2
+      },
+      1920: {
+          items: 2
+      }
+  }
+}); 
+
+
+$('.testimonials-container').owlCarousel({
+  loop:true,
+/*  autoplay:true, */
+  autoplayTimeout:6000,
+  margin:10,
+  nav:true, 
+  navText:["<i class='fa-solid fa-arrow-left'></i>",
+           "<i class='fa-solid fa-arrow-right'></i>"],
+  responsive:{
+      0:{
+          items:1,
+          nav:true, 
+          dots:false
+      },
+      600:{
+          items:1,
+          nav:true,  
+          dots:false
+      },
+      768:{
+          items:2
+      },
+  }
+})
+
+const btn = document
+  .querySelector('.read-more-btn');
+
+const text = document
+  .querySelector('.card__read-more');
+
+const cardHolder = document
+  .querySelector('.testimonials-container');
+
+cardHolder
+  .addEventListener('click', e => {
+
+      const current = e.target;
+
+      const isReadMoreBtn = current.className.includes('read-more-btn');
+
+      if (!isReadMoreBtn)
+          return;
+
+      const currentText = e.target.parentNode.querySelector('.card__read-more'); 
+      
+
+      currentText.classList.toggle('card__read-more--open');
+
+      current.textContent = current.textContent.includes('Read More...') ? 'Read Less...' : 'Read More...';
+
+  });
+
+/* Whatsapp Icon */
+let isChatboxVisible = false;
+const chatbox = document.querySelector(".WA_Chat_Widget .WA_ChatBox");
+
+function hideChatbox() {
+    isChatboxVisible = false;
+    chatbox.style.display = "none";
+}
+
+function toggleChatbox() {
+    isChatboxVisible = !isChatboxVisible;
+    chatbox.style.display = isChatboxVisible ? "block" : "none";
+}
+
+function openWhatsApp() { 
+  var phoneNumber = '+91 9004491160'; 
+  var phoneNumbers = '9004491160';
+  var message = encodeURIComponent("Heyy!! I'm interested in diet counseling and seeking information on available services");
+
+  var isMobile = /Android/i.test(navigator.userAgent); 
+
+  var isMobiles = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+  var whatsappLink = isMobile ?
+      'https://wa.me/' + phoneNumber + '?text=' + message :
+      'https://web.whatsapp.com/send?phone=' + phoneNumber + '&text=' + message; 
+
+      var whatsappLinks = isMobiles ?
+      'https://wa.me/' + phoneNumbers + '?text=' + message :
+      'https://web.whatsapp.com/send?phone=' + phoneNumber + '&text=' + message;
+
+  window.open(whatsappLink, '_blank'); 
+
+  window.open(whatsappLinks, '_blank');
+
+  setTimeout(function() {
+      window.location.href = '';
+  }, 2000);
+}
+
+
+function openWpToBookAppo() {
+  var phoneNumber = '+91 9004491160'; 
+  var phoneNumbers = '9004491160';
+  var message = encodeURIComponent("Heyy!! I'm interested in diet counseling and seeking information on available services");
+
+  var isMobile = /Android/i.test(navigator.userAgent); 
+
+  var isMobiles = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+  var whatsappLink = isMobile ?
+      'https://wa.me/' + phoneNumber + '?text=' + message :
+      'https://web.whatsapp.com/send?phone=' + phoneNumber + '&text=' + message; 
+
+      var whatsappLinks = isMobiles ?
+      'https://wa.me/' + phoneNumbers + '?text=' + message :
+      'https://web.whatsapp.com/send?phone=' + phoneNumber + '&text=' + message;
+
+  window.open(whatsappLink, '_blank'); 
+
+  window.open(whatsappLinks, '_blank');
+
+  setTimeout(function() {
+      window.location.href = '';
+  }, 2000);
+}
+
+
+function openWpToEnroll() {
+  var phoneNumber = '+91 9004491160'; 
+  var phoneNumbers = '9004491160';
+  var message = encodeURIComponent("Heyy!! I'm interested in diet counseling and seeking information on available services");
+
+  var isMobile = /Android/i.test(navigator.userAgent); 
+
+  var isMobiles = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+  var whatsappLink = isMobile ?
+      'https://wa.me/' + phoneNumber + '?text=' + message :
+      'https://web.whatsapp.com/send?phone=' + phoneNumber + '&text=' + message; 
+
+      var whatsappLinks = isMobiles ?
+      'https://wa.me/' + phoneNumbers + '?text=' + message :
+      'https://web.whatsapp.com/send?phone=' + phoneNumber + '&text=' + message;
+
+  window.open(whatsappLink, '_blank'); 
+
+  window.open(whatsappLinks, '_blank');
+
+  setTimeout(function() {
+      window.location.href = '';
+  }, 2000);
+}
+
+function openWpToOther() {
+  var phoneNumber = '+91 9004491160'; 
+  var phoneNumbers = '9004491160';
+  var message = encodeURIComponent(" ");
+
+  var isMobile = /Android/i.test(navigator.userAgent); 
+
+  var isMobiles = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+  var whatsappLink = isMobile ?
+      'https://wa.me/' + phoneNumber + '?text=' + message :
+      'https://web.whatsapp.com/send?phone=' + phoneNumber + '&text=' + message; 
+
+      var whatsappLinks = isMobiles ?
+      'https://wa.me/' + phoneNumbers + '?text=' + message :
+      'https://web.whatsapp.com/send?phone=' + phoneNumber + '&text=' + message;
+
+  window.open(whatsappLink, '_blank'); 
+
+  window.open(whatsappLinks, '_blank');
+
+  setTimeout(function() {
+      window.location.href = '';
+  }, 2000);
+}
+
+/* Book Appoi */
+function openWP() {
+  var phoneNumber = '+91 9004491160'; 
+  var phoneNumbers = '9004491160';
+  var message = encodeURIComponent("SLOTS");
+
+  var isMobile = /Android/i.test(navigator.userAgent); 
+
+  var isMobiles = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+  var whatsappLink = isMobile ?
+      'https://wa.me/' + phoneNumber + '?text=' + message :
+      'https://web.whatsapp.com/send?phone=' + phoneNumber + '&text=' + message; 
+
+      var whatsappLinks = isMobiles ?
+      'https://wa.me/' + phoneNumbers + '?text=' + message :
+      'https://web.whatsapp.com/send?phone=' + phoneNumber + '&text=' + message;
+
+  window.open(whatsappLink, '_blank'); 
+
+  window.open(whatsappLinks, '_blank');
+
+  setTimeout(function() {
+      window.location.href = '';
+  }, 2000);
+}
+
+
+/* Image change after certain time */ 
+/* function changeImage() {
+  document.getElementById('aboutImage').src = 'images/logo.png'; 
+}
+setTimeout(changeImage, 5000); 
+ */
+AOS.init( {
+  offset: 350, 
+  duration: 300, 
+}
+); 
+
+
+
+
+
+

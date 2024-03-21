@@ -44,7 +44,7 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
+.body {
  /*  background-color:  #ecf0ff; */ 
  background-color: white !important;
   list-style: none; 
@@ -604,7 +604,8 @@ header{
  .tag {
   position: relative;
   margin-top: 43px; 
-  overflow: hidden; 
+  overflow: hidden;  
+  width: 106%;
 }
 
 #background-video2 {
@@ -908,7 +909,8 @@ font-style: normal;
     flex: 100%;
   } 
   section#book{
-    padding: 50px 0px;
+    padding: 50px 0px; 
+    width: 105%;
 }
 .book-content-par{
     flex-direction: column; 
