@@ -910,6 +910,7 @@ font-style: normal;
   } 
   section#book{
     padding: 50px 0px; 
+    width: 105%;
 }
 .book-content-par{
     flex-direction: column; 
