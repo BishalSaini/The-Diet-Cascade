@@ -375,7 +375,7 @@ header{
     margin-left: 0rem;
 }
 
-.about-content .about-heading {   
+ .about-heading {   
     text-transform: capitalize;
     font-size: 45px;
     /* color: rgba(114,101,92,1); */ 
@@ -585,8 +585,8 @@ header{
 
 /* About Dt.Sabah End */ 
 
- 
-/* .tag {
+  
+ .tag {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/running.jpg);
   background-attachment: fixed;
   background-position: center center;
@@ -594,14 +594,14 @@ header{
   background-size: cover;
   color: #fff;
   margin-top: 0px;
-} */
+} 
 
-/* .tag-content-par {
+ .tag-content-par {
   display: flex;
   flex-wrap: wrap; 
 } 
- */
- .tag {
+
+/*  .tag {
   position: relative;
   margin-top: 43px; 
   overflow: hidden;  
@@ -615,7 +615,7 @@ header{
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: -1; /* Set a negative z-index to position the video behind the content */ 
+  z-index: -1; 
 }
 
 
@@ -624,7 +624,7 @@ header{
   flex-wrap: wrap;
   position: relative; 
   z-index: 1;
-} 
+}  */
 
 
 .tag-counter {
@@ -812,27 +812,92 @@ font-style: normal;
 /* Diet Perspective End */
 
 
-/* why choose us */ 
-.whycu{
+/* .whycu{
   margin-top:20px;
-  background:white;
-  }
-  .text-custom{
-/*   color: #0062ff !important;  */
-  color: rgb(49, 49, 149);
-  font-size: 50px;
-  font-family: 'Nephilm';
-  font-weight: 400;
-  font-style: normal;
-  } 
+  background:white;  
+} 
 
-  
+.row{
+  flex-direction: column!important;
+} 
+
+.text-custom{
+/*   color: #0062ff !important;  
+color: rgb(49, 49, 149);
+font-size: 50px;
+font-family: 'Nephilm';
+font-weight: 400;
+font-style: normal;
+} 
+
+
 @media (max-width: 991px) {
-  
-  .whycu .row {
-    flex-direction: row !important;
-  } 
+
+.whycu .row {
+  flex-direction: column !important;
+} 
+}*/ 
+
+
+#about-section {
+  background:white!important;
+  position: relative!important; 
+} 
+
+
+
+.blockabout {
+  padding: 20px!important;
+  background: white!important;
 }
+
+.blockabout-inner {
+  padding: 30px!important;
+/*   border: 1px solid rgba(32, 33, 36, 0.1)!important; */ 
+
+}
+
+.sosmed-horizontal a i {
+  border: 1px solid #070707!important;
+  border-radius: 50%!important;
+  color: #070707!important;
+  display: inline-block!important;
+  height: 30px!important;
+  width: 30px!important;
+  line-height: 30px!important;
+  margin: auto 3px!important;
+  font-size: 15px!important;
+  text-align: center!important;
+  transition: all 0.3s!important;
+}
+
+.rey-btn {
+  border: 2px solid #070707!important;
+  padding: 10px 40px!important;
+  text-transform: uppercase!important;
+  letter-spacing: 2px!important;
+  font-size: 13px!important;
+  font-weight: 700!important;
+  border-radius: 50px!important;
+  transition: all 0.3s!important;
+} 
+
+.pwr{  
+  margin-top:120px;
+  width: 90%!important;
+}
+
+@media (max-width: 991px) {
+  .pwr{ 
+    margin-top: 0;
+  }
+} 
+
+
+
+
+
+
   
 
 
