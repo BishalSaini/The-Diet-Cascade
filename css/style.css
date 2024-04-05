@@ -584,109 +584,57 @@ header{
 }
 
 /* About Dt.Sabah End */ 
-
-  
- .tag {
+/* Tag Section */
+.tag {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/writing.jpg);
   background-attachment: fixed;
-  background-position: center center;
-  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   color: #fff;
-  margin-top: 0px;
-} 
-
- .tag-content-par {
-  display: flex;
-  flex-wrap: wrap; 
-} 
-
-/*  .tag {
-  position: relative;
-  margin-top: 43px; 
-  overflow: hidden;  
-  
+  padding: 60px 20px; /* Adjust padding for content spacing */
 }
 
-#background-video2 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1; 
-}
-
-
-.tag-content-par {
+.tag-container {
   display: flex;
-  flex-wrap: wrap;
-  position: relative; 
-  z-index: 1;
-}  */
-
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
 .tag-counter {
   flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  height: 45px;
-  margin: 20px; 
 }
-
 
 .tag-counter p {
   font-size: 22px;
-  margin-bottom: 20px;
-  letter-spacing: 3px;
-  text-align: center;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  font-weight: bold; 
   color: white;
-  font-weight: 800; 
-  margin-top: -2rem;
+  margin: 20px auto; /* Center the text vertically */
+  max-width: 800px; /* Limit text width for readability */
 }
 
 @media (max-width: 768px) {
-  .tag-counter {
-    flex: 100%;
-  } 
-
   .tag-counter p {
-    font-size: 18px;
-    margin-bottom: 20px; 
-    margin-top: -6rem;
+      font-size: 18px;
   }
-}  
+}
 
 @media (max-width: 600px) {
-
   .tag-counter p {
-    font-size: 15px;
-    margin-bottom: 20px; 
-    margin-top: -5rem;
+      font-size: 16px;
   }
-}  
+}
 
 @media (max-width: 400px) {
-
   .tag-counter p {
-    font-size: 14px;
-    margin-bottom: 20px; 
-    margin-top: -7rem;
+      font-size: 14px;
   }
-}  
+}
 
-@media (max-width: 280px) {
-
-  .tag-counter p {
-    font-size: 9px;
-    margin-bottom: 20px;  
-    margin-top: -10rem;
-  }
-} 
-/* TagLine */
 
 
 /* Diet Perspective */
