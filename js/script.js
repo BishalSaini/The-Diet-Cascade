@@ -340,7 +340,27 @@ cardHolder
 
       current.textContent = current.textContent.includes('Read More...') ? 'Read Less...' : 'Read More...';
 
-  });
+  }); 
+
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const toggleLink = document.getElementById('toggleTerms');
+    const termsCard = document.getElementById('termsCard');
+    const closeBtn = document.getElementById('closeCard');
+
+    // Toggle card visibility when link is clicked
+    toggleLink.addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent default link behavior
+        termsCard.style.display = (termsCard.style.display === 'block') ? 'none' : 'block';
+    });
+
+    // Close the card when close button is clicked
+    closeBtn.addEventListener('click', function() {
+        termsCard.style.display = 'none';
+    });
+});
+
+
 
 /* Whatsapp Icon */
 let isChatboxVisible = false;
