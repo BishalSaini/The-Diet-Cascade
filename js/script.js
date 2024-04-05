@@ -147,16 +147,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
 $(document).ready(function() {
   var originalContent = $("#content-to-replace").html();
-  
-  $("#see-more-btn").click(function() {
+
+  // Toggle content on "Read More" button click
+  $(document).on("click", "#see-more-btn", function() {
       var additionalContent = $("#additional-paragraphs").html();
       $("#content-to-replace").html(additionalContent);
   });
 
-  $("#about-section").on("click", "#see-less-btn", function() {
+  // Toggle back to original content on "Back" button click
+  $(document).on("click", "#see-less-btn", function() {
       $("#content-to-replace").html(originalContent);
   });
 });
+
 
 var swiper = new Swiper('.blog-slider', {
   spaceBetween: 30, 

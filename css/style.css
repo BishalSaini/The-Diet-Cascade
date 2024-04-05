@@ -838,68 +838,95 @@ font-style: normal;
 } 
 }*/ 
 
-
 #about-section {
-  background:white!important;
-  position: relative!important; 
-} 
-
-
-
-.blockabout {
-  padding: 20px!important; 
-  color: #000!important;
-  background: white!important; 
+  padding: 50px 0;
+  background-color: white;
+  text-align: center;
 }
 
-.blockabout-inner {
-  padding: 30px!important;
-/*   border: 1px solid rgba(32, 33, 36, 0.1)!important; */ 
+.wrapabout {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 
+.blockabout {
+  padding: 20px;
+  color: #000;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  max-width: 600px;
+  width: 100%;
+}
+
+.about-heading {
+  color: #313195;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.description-p {
+  color: #000;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: justify;
 }
 
 .sosmed-horizontal a i {
-  border: 1px solid #070707!important;
-  border-radius: 50%!important;
-  color: #070707!important;
-  display: inline-block!important;
-  height: 30px!important;
-  width: 30px!important;
-  line-height: 30px!important;
-  margin: auto 3px!important;
-  font-size: 15px!important;
-  text-align: center!important;
-  transition: all 0.3s!important;
-} 
-
-.description-p{ 
-  color: #000!important;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  margin: 0 5px;
+  border-radius: 50%;
+  font-size: 18px;
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #000;
+  transition: all 0.3s;
 }
 
+.sosmed-horizontal a i:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Custom CSS for hover animation */
 .rey-btn {
-  border: 2px solid #070707!important;
-  padding: 10px 40px!important;
-  text-transform: uppercase!important;
-  letter-spacing: 2px!important;
-  font-size: 13px!important;
-  font-weight: 700!important;
-  border-radius: 50px!important;
-  transition: all 0.3s!important;
-} 
-
-.pwr{  
-  margin-top:120px;
-  width: 90%!important;
+  position: relative;
+  display: inline-block;
+  padding: 10px 40px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-radius: 50px;
+  transition: all 0.3s ease;
 }
 
-@media (max-width: 991px) {
-  .pwr{ 
-    margin-top: 0;
-  }
+.rey-btn i {
+  margin-right: 8px;
+}
+
+.rey-btn.animate {
+  transform: translateX(5px); /* Move button slightly to the right on hover */
 } 
 
+#content-to-replace {
+  transition: opacity 0.3s ease;
+}
 
 
+
+.pwr {
+  max-width: 100%;
+  height: auto;
+  
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
 
 
