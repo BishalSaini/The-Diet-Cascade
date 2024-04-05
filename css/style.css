@@ -1547,13 +1547,23 @@ font-style: normal;
 }
 .about-text p {
   font-size: 18px;
-  max-width: 600px; 
+  line-height: 1.6; /* Improved line spacing for readability */
   color: #000;
+  margin-bottom: 20px; /* Added space below each paragraph */
 }
+
 .about-text p mark {
   font-weight: 600;
   color: #20247b;
 }
+
+@media (max-width: 767px) {
+  .about-text p {
+    font-size: 16px; /* Adjusted font size for smaller screens */
+    max-width: 100%; /* Ensure paragraphs don't overflow on small screens */
+  }
+}
+
 
 .about-list {
   padding-top: 10px;
