@@ -1978,7 +1978,17 @@ i#next {
   width: 100%;
   overflow: hidden;
 }  
+}  
+
+@media (max-width:399px) { 
+
+  .CT-image-container {
+  height: 365px;
+  max-width: 500px;
+  width: 100%;
+  overflow: hidden;
 } 
+}
 
 @media (max-width:400px) { 
 
