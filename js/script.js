@@ -79,7 +79,7 @@ const speed = 200;
 const options = {
   root: null,
   rootMargin: "0px",
-  threshold: 0.5, 
+  threshold: 0.5,
 };
 
 const handleIntersection = (entries, observer) => {
@@ -109,10 +109,9 @@ const observer = new IntersectionObserver(handleIntersection, options);
 const counterSection = document.getElementById("counterSection");
 if (counterSection) {
   observer.observe(counterSection);
-} 
+}
 
-
-// Benifits 
+// Benifits
 document.addEventListener("DOMContentLoaded", function () {
   var swiper = new Swiper(".re-services", {
     slidesPerView: 2,
@@ -146,8 +145,7 @@ $(document).ready(function () {
   $(document).on("click", "#see-less-btn", function () {
     $("#content-to-replace").html(originalContent);
   });
-}); 
-
+});
 
 // what we offer
 var swiper = new Swiper(".blog-slider", {
@@ -164,8 +162,7 @@ var swiper = new Swiper(".blog-slider", {
     el: ".blog-slider__pagination",
     clickable: true,
   },
-}); 
-
+});
 
 // tagline video
 document.addEventListener("DOMContentLoaded", function () {
@@ -181,8 +178,6 @@ document.addEventListener("DOMContentLoaded", function () {
   video2.removeAttribute("controls");
   video2.play();
 });
-
-
 
 /* Efficient Service Suite */
 let stack = document.querySelector(".es-stack");
@@ -215,15 +210,14 @@ function rotateCards() {
   });
 }
 
-rotateCards(); 
-
+rotateCards();
 
 /* Workout Program */
 const panels = document.querySelectorAll(".panel");
 
 panels.forEach((panel) => {
   panel.addEventListener("click", () => {
-    removeActiveClasses(); 
+    removeActiveClasses();
     panel.classList.add("active");
   });
 });
@@ -235,29 +229,41 @@ function removeActiveClasses() {
 }
 
 // client transformation
-$(document).ready(function () {
-  $(".cT-carousel").slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    responsive: [
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
-  });
-});
 
+const wrapper = document.querySelector(".CT-wrapper"),
+  carousel = document.querySelector(".CT-carousel"),
+  images = document.querySelectorAll(".ct-img"),
+  buttons = document.querySelectorAll(".button");
+
+let imageIndex = 1,
+  intervalId;
+
+const autoSlide = () => {
+  intervalId = setInterval(() => slideImage(++imageIndex), 6000);
+};
+
+autoSlide();
+
+const slideImage = () => {
+  imageIndex =
+    imageIndex === images.length
+      ? 0
+      : imageIndex < 0
+      ? images.length - 1
+      : imageIndex;
+  carousel.style.transform = `translate(-${imageIndex * 100}%)`;
+};
+
+const updateClick = (e) => {
+  clearInterval(intervalId);
+  imageIndex += e.target.id === "next" ? 1 : -1;
+  slideImage(imageIndex);
+  autoSlide();
+};
+
+buttons.forEach((button) => button.addEventListener("click", updateClick));
+wrapper.addEventListener("mouseover", () => clearInterval(intervalId));
+wrapper.addEventListener("mouseleave", autoSlide);
 
 // Reviews
 $(".testimonials-container").owlCarousel({
@@ -285,7 +291,7 @@ $(".testimonials-container").owlCarousel({
       items: 2,
     },
   },
-}); 
+});
 
 const btn = document.querySelector(".read-more-btn");
 const text = document.querySelector(".card__read-more");
@@ -317,8 +323,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-
-// Whatsapp Icon 
+// Whatsapp Icon
 let isChatboxVisible = false;
 const chatbox = document.querySelector(".WA_Chat_Widget .WA_ChatBox");
 
@@ -471,49 +476,4 @@ function openWP() {
 AOS.init({
   offset: 350,
   duration: 300,
-}); 
-
-// Get the DOM elements for the image carousel
-const wrapper = document.querySelector(".CT-wrapper"),
-  carousel = document.querySelector(".CT-carousel"),
-  images = document.querySelectorAll(".ct-img"),
-  buttons = document.querySelectorAll(".button");
-
-let imageIndex = 1,
-  intervalId;
-
-// Define function to start automatic image slider
-const autoSlide = () => {
-  // Start the slideshow by calling slideImage() every 2 seconds
-  intervalId = setInterval(() => slideImage(++imageIndex), 6000);
-};
-// Call autoSlide function on page load
-autoSlide();
-
-// A function that updates the carousel display to show the specified image
-const slideImage = () => {
-  // Calculate the updated image index
-  imageIndex = imageIndex === images.length ? 0 : imageIndex < 0 ? images.length - 1 : imageIndex;
-  // Update the carousel display to show the specified image
-  carousel.style.transform = `translate(-${imageIndex * 100}%)`;
-};
-
-// A function that updates the carousel display to show the next or previous image
-const updateClick = (e) => {
-  // Stop the automatic slideshow
-  clearInterval(intervalId);
-  // Calculate the updated image index based on the button clicked
-  imageIndex += e.target.id === "next" ? 1 : -1;
-  slideImage(imageIndex);
-  // Restart the automatic slideshow
-  autoSlide();
-};
-
-// Add event listeners to the navigation buttons
-buttons.forEach((button) => button.addEventListener("click", updateClick));
-
-// Add mouseover event listener to wrapper element to stop auto sliding
-wrapper.addEventListener("mouseover", () => clearInterval(intervalId));
-// Add mouseleave event listener to wrapper element to start auto sliding again
-wrapper.addEventListener("mouseleave", autoSlide);
-
+});
