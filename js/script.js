@@ -172,12 +172,6 @@ document.addEventListener("DOMContentLoaded", function () {
   video.play();
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  var video2 = document.getElementById("background-video2");
-
-  video2.removeAttribute("controls");
-  video2.play();
-});
 
 /* Efficient Service Suite */
 let stack = document.querySelector(".es-stack");
@@ -308,20 +302,7 @@ cardHolder.addEventListener("click", (e) => {
     : "Read More...";
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  const toggleLink = document.getElementById("toggleTerms");
-  const termsCard = document.getElementById("termsCard");
-  const closeBtn = document.getElementById("closeCard");
 
-  toggleLink.addEventListener("click", function (event) {
-    event.preventDefault();
-    termsCard.style.display =
-      termsCard.style.display === "block" ? "none" : "block";
-  });
-  closeBtn.addEventListener("click", function () {
-    termsCard.style.display = "none";
-  });
-});
 
 // Whatsapp Icon
 let isChatboxVisible = false;
