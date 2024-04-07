@@ -757,80 +757,35 @@ font-style: normal;
 /* Diet Perspective End */
 
 
-/* about tdc start */
-.wrapabout {
+/* Styling for paragraphs container */
+.paragraphs-container {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start; 
+  flex-direction: row;
+  flex-wrap: wrap; 
 }
 
-.blockabout {
-  padding: 20px;
-  color: #000;
-  border-radius: 5px;
-  max-width: 600px;
-  width: 100%;
-}
-
-.sosmed-horizontal {
-  margin-top: 20px;
-} 
-
+/* Individual paragraph styles */
 .description-p {
-  color: #000; 
-  font-size: 16px;
-  line-height: 1.6;
-  text-align: justify;
-}
-
-.sosmed-horizontal a i {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
-  text-align: center;
-  margin-right: 10px; 
-  border-radius: 50%;
-  font-size: 18px;
+  flex: 1 1 100%; /* Allow paragraphs to take full width */
+  margin-bottom: 20px; 
   color: #000;
-  background-color: #fff;
-  border: 1px solid #000;
-  transition: all 0.3s;
 }
 
-.sosmed-horizontal a i:hover {
-  background-color: #000;
-  color: #fff;
+/* Centering social media icons */
+.sosmed-horizontal {
+  text-align: center;
 }
 
-.rey-btn {
-  display: inline-block;
-  padding: 10px 20px; 
-  margin-top: 10px; 
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: 1.2rem;
-  font-weight: 700;
-  border-radius: 50px;
-  transition: all 0.3s ease;
+/* Styling the logo image */
+.potoaboutwrap {
+  margin-top: 40px; /* Adjust spacing between paragraphs and logo */
+}
+.potoaboutwrap img {
+  max-width: 370px; /* Adjust the maximum width of the logo */
+  height: auto; /* Maintain aspect ratio */
 }
 
-.rey-btn i {
-  margin-right: 8px;
-}
 
-@media (max-width: 991px) {
-  .pwr {
-    max-width: 80%;
-    margin-top: 20px;
-    margin-left: -21px;
-  }
-
-  .wrapabout {
-    flex-direction: column;
-    align-items: center;
-  }
-}
 
 /* about tdc start End*/
 
@@ -1880,42 +1835,137 @@ font-style: normal;
 }  
 /* Work-Out End */
 
-/* Client Transformation start*/
-.CT{
-  min-height: 100vh;
+/* Client Transformation start*/  
+.CT-container {
   display: flex;
-  align-items: center;
-}
-.CT-wrapper{
-  width: 100%;
-}
-.cT-carousel{
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 30px;
-}
-.cT-carousel h2 {
-  font-size: 24px;
-  margin-bottom: 20px;
-  color: #333;
-  text-align: center;
-}
-.cT-carousel .cT-card{
-    color: #fff;
-    text-align: center;
-    margin: 20px 10px; 
-    border-radius: 10px;
-    box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
-    padding: 20px;
-    transition: transform 0.3s ease; 
+  flex-direction: row;
+  justify-content: center; 
+  align-items: center; 
 }
 
-.cT-carousel .cT-card img {
-  width: 100%; 
-  height: 450px; 
+.client-info {
+  flex: 1;
+  padding: 20px;
+  align-self: center; 
+  text-align: center;
+}
+
+.client-info h2 {
+  color: rgb(49, 49, 149);
+  text-transform: capitalize;
+  font-size: 4.5rem;
+  text-align: left;
+  line-height: 1.2;
+  letter-spacing: 0em;
+  font-family: 'Nephilm';
+  font-weight: 400;
+  font-style: normal;
+}
+
+.client-info p {
+  color: rgba(25, 25, 26, 1);
+  line-height: 1.8;
+  letter-spacing: 0.02em;
+  font-size: 1.7rem;
+  text-align: left;
+  font-family: 'Lexend Deca';
+  font-weight: 300;
+  font-style: normal;
+  margin-top: 2vh;
+}
+
+.CT-wrap {
+  flex: 1; /* Take up remaining space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.CT-wrapper {
+  max-width: 650px;
+  width: 100%;
+  height: 600px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border: 7px solid #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.CT-wrapper i.button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 36px;
+  width: 36px;
+  background-color: black;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 36px;
+  color: #fff;
+  font-size: 15px;
+  transition: all 0.3s linear;
+  z-index: 100;
+  cursor: pointer;
+}
+
+i.button:active {
+  transform: scale(0.94) translateY(-50%);
+}
+
+i#prev {
+  left: 25px;
+}
+
+i#next {
+  right: 25px;
+}
+
+.CT-image-container {
+  height: 525px;
+  max-width: 500px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.CT-image-container .CT-carousel {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  transition: all 0.4s ease;
+}
+
+.CT-carousel img {
+  height: 100%;
+  width: 100%;
+  border-radius: 18px;
+  border: 10px solid #fff;
   object-fit: cover;
-  border-radius: 10px; 
+}
+
+@media (max-width: 768px) {
+  .CT-container {
+    flex-direction: column; /* Stack items vertically */
+  }
+
+  .client-info,
+  .CT-wrap {
+    width: 100%; /* Full width on smaller screens */
+  }
 } 
+
+@media (max-width:550px) { 
+
+  .CT-image-container {
+  height: 455px;
+  max-width: 500px;
+  width: 100%;
+  overflow: hidden;
+} 
+}
+
 
 /* Client Transformation End*/
 
