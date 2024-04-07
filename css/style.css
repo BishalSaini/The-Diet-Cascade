@@ -1961,19 +1961,19 @@ i#next {
 
 @media (max-width: 768px) {
   .CT-container {
-    flex-direction: column; /* Stack items vertically */
+    flex-direction: column; 
   }
 
   .client-info,
   .CT-wrap {
-    width: 100%; /* Full width on smaller screens */
+    width: 100%; 
   }
 } 
 
-@media (max-width:550px) { 
+@media (max-width:600px) { 
 
   .CT-image-container {
-  height: 455px;
+  height: 500px;
   max-width: 500px;
   width: 100%;
   overflow: hidden;
