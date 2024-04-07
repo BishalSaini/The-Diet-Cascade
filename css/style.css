@@ -288,7 +288,7 @@ input[type="checkbox"] {
 
 /* Start Page  */
 header{
-  width: 104%;
+  width: 105%; /* Ensure full width */
   height: 100vh;
   position: relative !important;
   color: #fff;
@@ -296,7 +296,7 @@ header{
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 0 217px !important;
+  padding: 0 20px !important; /* Adjust padding for smaller screens */
   background-blend-mode: overlay; 
   
 }
@@ -308,7 +308,9 @@ header{
   left: 0;
   top: 0;
   z-index: -1;  
-} 
+}  
+
+
 
 #video{
   width: 100%;
@@ -752,12 +754,20 @@ font-style: normal;
 } 
 
 
-@media only screen and (max-width: 768px) { 
+@media only screen and (max-width: 768px) {
+  .dpdt-div {
+    text-align: center; /* Center-align the content */
+    padding: 20px; /* Adjust padding as needed */
+    box-sizing: border-box;
+  }
+
   .dpdt-div .dpdt-para {
     font-size: 20px;
-    text-align: center;
+    line-height: 1.6; /* Adjust line height as needed */
+    text-align: center; /* Center-align the text within the container */
+  }
 }
-}
+
 /* Diet Perspective End */
 
 
