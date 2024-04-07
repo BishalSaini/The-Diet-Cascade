@@ -1967,10 +1967,17 @@ i#next {
   .client-info,
   .CT-wrap {
     width: 100%; 
-  }
+  } 
+
+  .CT-image-container {
+    height: 500px;
+    max-width: 500px;
+    width: 100%;
+    overflow: hidden;
+  } 
 } 
 
-@media (max-width:768px) { 
+@media (max-width:600px) { 
 
   .CT-image-container {
   height: 500px;
