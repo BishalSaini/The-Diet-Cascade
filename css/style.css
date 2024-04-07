@@ -619,7 +619,7 @@ header{
       font-size: 18px;
   } 
   .tag {
-    background-size: contain;
+    background-size: cover;
   }
 }
 
