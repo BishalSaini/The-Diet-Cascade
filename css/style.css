@@ -1963,6 +1963,16 @@ i#next {
   max-width: 500px;
   width: 100%;
   overflow: hidden;
+}  
+} 
+
+@media (max-width:400px) { 
+
+  .CT-image-container {
+  height: 330px;
+  max-width: 500px;
+  width: 100%;
+  overflow: hidden;
 } 
 }
 
