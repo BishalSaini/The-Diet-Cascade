@@ -582,8 +582,9 @@ header{
 
 /* Tag Section */
 .tag {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/writing.jpg);
-  background-attachment: fixed;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/writing.jpg); 
+
+  background-attachment: scroll;
   background-position: center;
   background-size: cover;
   color: #fff;
@@ -616,6 +617,9 @@ header{
 @media (max-width: 768px) {
   .tag-counter p {
       font-size: 18px;
+  } 
+  .tag {
+    background-size: contain;
   }
 }
 
