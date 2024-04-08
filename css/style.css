@@ -756,52 +756,50 @@ font-style: normal;
 
 @media only screen and (max-width: 768px) {
   .dpdt-div {
-    text-align: center; /* Center-align the content */
-    padding: 20px; /* Adjust padding as needed */
+    text-align: center; 
+    padding: 20px;
     box-sizing: border-box;
   }
 
   .dpdt-div .dpdt-para {
     font-size: 20px;
-    line-height: 1.6; /* Adjust line height as needed */
-    text-align: center; /* Center-align the text within the container */
-  }
+    line-height: 1.6; 
+    text-align: center; 
+} 
 }
 
 /* Diet Perspective End */
 
-
-/* Styling for paragraphs container */
+/* about tdc start End*/
 .paragraphs-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap; 
 }
 
-/* Individual paragraph styles */
+
 .description-p {
-  flex: 1 1 100%; /* Allow paragraphs to take full width */
+  flex: 1 1 100%; 
   margin-bottom: 20px; 
   color: #000;
 }
 
-/* Centering social media icons */
+
 .sosmed-horizontal {
   text-align: center;
 }
 
-/* Styling the logo image */
 .potoaboutwrap {
-  margin-top: 40px; /* Adjust spacing between paragraphs and logo */
+  margin-top: 40px; 
 }
 .potoaboutwrap img {
-  max-width: 370px; /* Adjust the maximum width of the logo */
-  height: auto; /* Maintain aspect ratio */
+  max-width: 370px; 
+  height: auto; 
 }
 
 
 
-/* about tdc start End*/
+/* about tdc End*/
 
 
 /* TagLine2 Start */
