@@ -1532,23 +1532,23 @@ font-style: normal;
    } 
 }
 
-.about-section .counter {
+.counter {
   padding: 22px 20px;
   background: #ffffff;
   border-radius: 10px;
   box-shadow: 0 0 30px rgba(31, 45, 61, 0.125); 
   margin-top: 2rem;
 }
-.about-section .counter .count-data {
+ .counter .count-data {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-.about-section .counter .count {
+ .counter .count {
   font-weight: 700;
   color: #20247b;
   margin: 0 0 5px;
 }
-.about-section .counter p {
+ .counter p {
   font-weight: 600;
   margin: 0;
 }
