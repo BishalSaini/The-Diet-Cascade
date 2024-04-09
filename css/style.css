@@ -2700,22 +2700,25 @@ section {
 }
 
 .WA_Chat_Widget .WA_FloatingButton{
-    position: fixed;
-    width: 70px;
-    height: 70px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 4px 10px 0px rgba(0, 0, 0, 0.185);
-    border-radius: 50%;
-    background: #fff;
-    cursor: pointer;
-    z-index: 1000;
-    }
+  position: fixed;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: #5ac181;
+  box-shadow: 0 4px 10px 0px rgba(0, 0, 0, 0.185);
+  cursor: pointer;
+  z-index: 1000;
+  animation: pulsate 2s infinite;
+    } 
+
+  
     .WA_Chat_Widget .WA_FloatingButton svg{
-    width: 40px;
-    height: 40px;
-    fill: #4fce5d;
+      width: 40px;
+  height: 40px;
+  fill: #ffffff; 
     }
     .WA_Chat_Widget[data-position^="top-"] .WA_FloatingButton{
     top: 20px;
@@ -2900,24 +2903,23 @@ section {
     width: 85%; 
     margin-left: 2rem;
     }    
-  
-    @keyframes pulsate {
-    0% {
+  @keyframes pulsate {
+  0% {
     transform: scale(1);
     box-shadow: 0 4px 10px 0px rgba(0, 0, 0, 0.185);
-    background-color: #fff;
-    }
-    50% {
+    background-color: #5ac181; 
+  }
+  50% {
     transform: scale(1.1);
     box-shadow: 0 8px 20px 0px rgba(0, 0, 0, 0.3);
-    background-color: #f8f8f8;
-    }
-    100% {
+    background-color: #5ac181;
+  }
+  100% {
     transform: scale(1);
     box-shadow: 0 4px 10px 0px rgba(0, 0, 0, 0.185);
-    background-color: #fff;
-    }
-    }
+    background-color: #5ac181; 
+  }
+}
     
     .WA_Chat_Widget .WA_FloatingButton {
     animation: pulsate 2s infinite;
