@@ -807,7 +807,11 @@ font-style: normal;
 
 .potoaboutwrap img {
   max-width: 280px; 
-} 
+}  
+
+.description-p {
+  font-size: 0.9rem;
+}
 }
 
 
@@ -1451,9 +1455,9 @@ font-style: normal;
   color: #20247b;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 425px) {
   .about-text p {
-    font-size: 16px; 
+    font-size: 12px; 
     max-width: 100%; 
   }
 }
@@ -1866,6 +1870,14 @@ font-style: normal;
   }
 
   .panel p {
+    font-size: 12px;
+  }
+}   
+
+
+@media (max-width: 475px) {
+
+  .panel h3 {
     font-size: 12px;
   }
 }  
