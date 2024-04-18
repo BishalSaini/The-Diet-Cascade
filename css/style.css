@@ -405,7 +405,7 @@ header{
     font-family: 'Lexend Deca';
     font-weight: 300;
     font-style: normal; 
-    text-align: left; 
+    text-align: justify; 
     margin-top: 3rem; 
 }
 
@@ -531,7 +531,7 @@ header{
       max-width: 60%;
       order: 1;
       margin-left: -7rem; 
-      text-align: left;
+      text-align: justify;
   }
   }  
 
@@ -697,7 +697,6 @@ font-style: normal;
   line-height: 1.8;
   letter-spacing: 0.02em;
   font-size: 14px;
-  text-align: left;
   font-family: 'Lexend Deca';
   font-weight: 300;
   font-style: normal;
@@ -766,6 +765,12 @@ font-style: normal;
     line-height: 1.6; 
     text-align: center; 
 } 
+} 
+
+@media only screen and (max-width: 475px) {
+  .dpdt-container {
+      margin-right: -17px;
+  } 
 }
 
 /* Diet Perspective End */
@@ -781,7 +786,8 @@ font-style: normal;
 .description-p {
   flex: 1 1 100%; 
   margin-bottom: 20px; 
-  color: #000;
+  color: #000; 
+  text-align: justify;
 }
 
 
@@ -795,6 +801,13 @@ font-style: normal;
 .potoaboutwrap img {
   max-width: 370px; 
   height: auto; 
+} 
+
+@media(max-width: 425px) { 
+
+.potoaboutwrap img {
+  max-width: 280px; 
+} 
 }
 
 
@@ -902,7 +915,7 @@ font-style: normal;
 } 
 
 .blog-slider {
-  width: 95%;
+  width: 100%;
   position: relative;
   max-width: 900px;
   margin: 0 auto;
@@ -932,7 +945,17 @@ font-style: normal;
   .blog-slider {
     height: 350px;
   }
-}
+} 
+
+@media screen and (max-width: 475px) {
+  .blog-slider {
+    min-height: 500px;
+    height: auto;
+    margin: 180px 10px auto;
+  } 
+}  
+
+
 .blog-slider__item {
   display: flex !important;
   align-items: center !important;
@@ -1080,7 +1103,8 @@ font-style: normal;
 .blog-slider__text {
   color: #4e4a67;
   margin-bottom: 30px;
-  line-height: 1.5em;
+  line-height: 1.5em; 
+  text-align: justify;
 }
 .blog-slider__button {
   display: inline-flex;
@@ -1209,7 +1233,7 @@ font-style: normal;
   line-height: 1.8;
   letter-spacing: 0.02em;
   font-size: 1.7vw;
-  text-align: left;
+  text-align: justify;
   font-family: 'Lexend Deca';
   font-weight: 300;
   font-style: normal;
@@ -1879,7 +1903,7 @@ font-style: normal;
   line-height: 1.8;
   letter-spacing: 0.02em;
   font-size: 1.7rem;
-  text-align: left;
+  text-align: justify;
   font-family: 'Lexend Deca';
   font-weight: 300;
   font-style: normal;
@@ -2051,7 +2075,8 @@ i#next {
 	margin: 10px 0px 15px;
 	font-size: 14px;
 	line-height: 1.5;
-	color: var(--text-clr);
+	color: var(--text-clr); 
+  text-align: justify;
 }
 .test-card-body .ratings{
 	margin-top: 20px;
@@ -2265,7 +2290,7 @@ i#next {
   color: rgba(25, 25, 26, 1);
   line-height: 2;
   letter-spacing: 0.03em;
-  text-align: left;
+  text-align: justify;
   font-family: 'Lexend Deca';
   font-weight: 300;
   font-style: normal;
@@ -2923,7 +2948,7 @@ section {
     
     .WA_Chat_Widget .WA_FloatingButton {
     animation: pulsate 2s infinite;
-    border: 2px solid #4fce5d; 
+    border: 2px solid none; 
     } 
 
 
