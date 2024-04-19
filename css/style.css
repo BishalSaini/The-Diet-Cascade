@@ -348,7 +348,22 @@ header{
   width: 80%;
   margin: auto; 
   color: white;
-} 
+}  
+
+
+@media (max-width: 768px) {
+  .header-info-par .typewrite{
+    font-size: 25px;
+  }
+  .header-info-par p{
+    line-height: 30px;
+    font-size: 15px;
+    width: 80%;
+    margin: auto; 
+    color: white;
+  }  
+}  
+
 /* Start Page End */
 
 
@@ -1505,7 +1520,8 @@ font-style: normal;
   font-size: 15px;
 } 
 
-.we-button {
+.we-button { 
+  text-decoration: none;
   width: 26em;
   height: 3em;
   border-radius: 30em;
@@ -2722,7 +2738,8 @@ section {
     font-size: 12px;
   } 
 
-  .footer-distributed .footer-center p{
+  .footer-distributed .footer-center p{ 
+    text-decoration: none;
     display:block;
     font-weight: normal;
     font-size:12px;
