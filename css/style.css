@@ -401,7 +401,7 @@ header{
     color: rgba(25,25,26,1);
     line-height: 1.8;
     letter-spacing: 0.02em;
-    font-size: 16px;
+    font-size: 2rem;
     font-family: 'Lexend Deca';
     font-weight: 300;
     font-style: normal; 
@@ -578,6 +578,13 @@ header{
     display: flex;
   } 
 
+} 
+
+
+@media (max-width: 425px) {
+  .about-content .about-para{ 
+    font-size: 1.3rem;
+}
 }
 /* About Dt.Sabah End */  
 
@@ -810,7 +817,7 @@ font-style: normal;
 }  
 
 .description-p {
-  font-size: 0.9rem;
+  font-size: 1.3rem;
 }
 }
 
