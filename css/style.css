@@ -1656,6 +1656,16 @@ font-style: normal;
 
 .row{ 
   align-items: center!important;
+} 
+
+@media(max-width: 600px){
+
+  .counter {
+  margin-top: 3rem !important;
+  margin-right: -1rem;
+  margin-left: 0rem;
+} 
+
 }
 
 /* we aare pefect match End */
