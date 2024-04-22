@@ -1410,7 +1410,7 @@ font-style: normal;
 
   .es-stack {
     width: 80vw;
-    margin-right: 5vw; 
+    margin-left: 3rem; 
     margin-top: 6rem;
   }
 
@@ -1432,7 +1432,7 @@ font-style: normal;
 
 /* Efficient Service Suite  Start*/
 
-/* we aare pefect match start */
+/* we aare perfect match start */
 .gray-bg {
     background-color: white;
 }
@@ -1451,18 +1451,27 @@ font-style: normal;
   font-weight: 400;
   font-style: normal;
 }
-@media (max-width: 767px) {
-  .about-text h3 {
-    font-size: 35px;
-  }
-}
 .about-text h6 {
   font-weight: 600;
   margin-bottom: 15px;
-}
-@media (max-width: 767px) {
+} 
+
+
+@media (max-width: 800px) {
   .about-text h6 {
     font-size: 18px;
+  } 
+
+  .about-avatar {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100%; 
+  }
+  
+  .about-avatar img {
+    max-width: 100%; 
+    height: auto;
   }
 }
 .about-text p {
@@ -1475,14 +1484,47 @@ font-style: normal;
 .about-text p mark {
   font-weight: 600;
   color: #20247b;
+}  
+
+@media (max-width: 767px) {
+  .about-text h3 {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-avatar {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100%; 
+  }
+  
+  .about-avatar img {
+    max-width: 100%; 
+    height: auto;
+  }
+  
 }
 
 @media (max-width: 425px) {
   .about-text p {
     font-size: 12px; 
     max-width: 100%; 
+  } 
+  .about-avatar {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100%; 
   }
-}
+  
+  .about-avatar img {
+    max-width: 100%; 
+    height: auto;
+  }
+  
+} 
 
 
 .about-list {
@@ -1592,7 +1634,8 @@ font-style: normal;
 }
  .counter .count-data {
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 10px; 
+  text-align: center!important;
 }
  .counter .count {
   font-weight: 700;
@@ -1609,7 +1652,11 @@ font-style: normal;
 }
 .dark-color {
     color: rgb(49, 49, 149)
-} 
+}  
+
+.row{ 
+  align-items: center!important;
+}
 
 /* we aare pefect match End */
 
@@ -2041,7 +2088,12 @@ i#next {
   max-width: 500px;
   width: 100%;
   overflow: hidden;
-}  
+}   
+
+.CT-wrapper {
+  width: 100%;
+  height: 387px;
+}
 }  
 
 
@@ -2051,8 +2103,14 @@ i#next {
   height: 365px;
   max-width: 500px;
   width: 100%;
-  overflow: hidden;
-} 
+  overflow: hidden; 
+}  
+
+.CT-wrapper {
+  width: 100%;
+  height: 387px;
+}
+
 } 
 
 @media (max-width:399px) { 
@@ -2062,7 +2120,12 @@ i#next {
   max-width: 500px;
   width: 100%;
   overflow: hidden;
-} 
+}  
+
+.CT-wrapper {
+  width: 100%;
+  height: 387px;
+}
 }
 
 
