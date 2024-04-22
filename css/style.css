@@ -1962,7 +1962,7 @@ font-style: normal;
     display: flex;
     flex-direction: column;
     height: 58vh;  
-    margin-left: 2rem;
+    margin-left: 4rem;
 
   }
 
@@ -1991,8 +1991,23 @@ font-style: normal;
   }
 }   
 
+@media (max-width: 600px) { 
 
-@media (max-width: 475px) {
+  .work-container {
+    
+    margin-left: 2rem;
+
+  } 
+}
+
+
+@media (max-width: 475px) { 
+
+  .work-container {
+    
+    margin-left: 2rem;
+
+  }
 
   .panel h3 {
     font-size: 12px;
