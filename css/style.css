@@ -288,7 +288,7 @@ input[type="checkbox"] {
 
 /* Start Page  */
 header{
-  width: 105%; /* Ensure full width */
+  width: 105%; 
   height: 100vh;
   position: relative !important;
   color: #fff;
@@ -296,7 +296,7 @@ header{
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 0 20px !important; /* Adjust padding for smaller screens */
+  padding: 0 20px !important; 
   background-blend-mode: overlay; 
   
 }
@@ -802,6 +802,19 @@ font-style: normal;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap; 
+} 
+
+.about-heading5{  
+  text-transform: capitalize;
+  font-size: 45px;
+  color: rgb(49, 49, 149);
+  line-height: 1.2;
+  letter-spacing: 0em;
+  font-family: 'Nephilm';
+  font-weight: 400;
+  font-style: normal; 
+  text-align: left;
+  margin-left: 1rem;
 }
 
 
@@ -832,7 +845,8 @@ font-style: normal;
 }  
 
 .description-p {
-  font-size: 1.3rem;
+  font-size: 1.3rem; 
+  margin-left: 1rem;
 }
 }
 
@@ -1297,7 +1311,7 @@ font-style: normal;
 }
 
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 768px) {
   .es-body {
     margin-top: -23rem; 
   } 
@@ -1315,7 +1329,8 @@ font-style: normal;
   .es-stack {
     width: 80vw;
     margin-right: 5vw; 
-    margin-top: 6rem;
+    margin-top: 6rem; 
+      height: 55vh;
   }
 
   .es-card {
@@ -1364,7 +1379,7 @@ font-style: normal;
 }    
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .es-body {
     grid-template-columns: 1fr;
     margin-right: 5vw; 
@@ -1376,7 +1391,8 @@ font-style: normal;
   }
 
   .es-stack {
-    width: 80vw;
+    width: 80vw; 
+    height: 40vh;
     margin-right: 5vw; 
     margin-top: 6rem;
   }
@@ -1395,6 +1411,17 @@ font-style: normal;
   .es-title-container h1 {
     font-size: 10vw;
   }
+}  
+
+@media screen and (max-width: 600px) {
+
+  .es-stack {
+    width: 80vw; 
+    height: 60vh;
+    margin-right: 5vw; 
+    margin-top: 6rem;
+  }
+
 } 
 
 @media screen and (max-width: 425px) {
@@ -1409,7 +1436,8 @@ font-style: normal;
   }
 
   .es-stack {
-    width: 80vw;
+    width: 80vw; 
+    height: 40vh;
     margin-left: 3rem; 
     margin-top: 6rem;
   }
@@ -1503,7 +1531,11 @@ font-style: normal;
   .about-avatar img {
     max-width: 100%; 
     height: auto;
-  }
+  } 
+  .about-text p {
+    max-width: 100%; 
+    margin-left:1rem ;
+  } 
   
 }
 
@@ -1511,6 +1543,7 @@ font-style: normal;
   .about-text p {
     font-size: 12px; 
     max-width: 100%; 
+    margin-left:1rem ;
   } 
   .about-avatar {
     display: flex;
@@ -1522,6 +1555,10 @@ font-style: normal;
   .about-avatar img {
     max-width: 100%; 
     height: auto;
+  }  
+
+  .about-text h3 {
+    margin-left:1rem ;
   }
   
 } 
