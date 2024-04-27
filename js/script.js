@@ -457,4 +457,5 @@ function openWP() {
 AOS.init({
   offset: 350,
   duration: 300,
-});
+}); 
+
